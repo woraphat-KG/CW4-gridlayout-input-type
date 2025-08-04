@@ -1,0 +1,101 @@
+*{
+    box-sizing: border-box;
+}
+
+/* BODY */
+body{
+    font-family: Tahoma ,Blackadder ITC, Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+/*HEADER*/
+.header {
+    padding: 60px;
+    text-align: center;
+    background: salmon;
+    color: aliceblue;
+}
+
+/* navigation bar*/
+.navbar{
+    display: flex;
+    background-color: cornflowerblue;
+}
+
+/*navigation link*/
+.navbar a{
+    color: white;
+    padding: 14px 20px;
+    text-decoration:none;
+    text-align: center;
+}
+
+/*Hover*/
+.navbar a:hover{
+    background-color: lemonchiffon;
+    color: black;
+}
+
+/*Column container*/
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* create two column uneqaul*/
+/*sidebar / left column*/
+.side{
+    flex: 20%;
+    background-color: aquamarine;
+    padding: 20px;
+}
+
+/*main cloumn*/
+.main{
+    flex: 80%;
+    background-color: rgb(169, 221, 0);
+    padding: 20px;
+}
+
+/* Fake img*/
+.fakeimg{
+    background-color: bisque;
+    width: 100%;
+    padding: 20px;
+}
+
+/*footer*/
+.footer{
+    padding: 20px;
+    text-align: center;
+    background: lightskyblue;
+}
+
+/* responsive
+*/
+@media(max-width:700px){
+    .row, .navbar{
+        flex-direction: column;
+    }
+}
+
+/*
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    font-size: 50px;
+    text-align: center;
+}
+
+.flex-item-left{
+    background-color: red;
+    padding: 10px;
+    flex: 50%;
+}
+.flex-item-right{
+    background-color: yellow;
+    padding: 10px;
+    flex: 50%;
+}
+*/
+
